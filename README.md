@@ -39,8 +39,7 @@ SQUADSHIELD clearly distinguishes live Nexconn functionality from client-side de
 ### Client-Side Demo / MVP Limitations (Important)
 1. **MVP Roster Allowlist Authentication:** `/api/nexconn/token` and `/api/nexconn/squad/ensure` do not use user login sessions or JWT authentication yet. Instead, this hackathon MVP restricts token issuance to a strict squad roster allowlist (`player_kael`, `player_nyx`, `player_vex`, `player_ryder`) and enforces per-IP rate limiting (15 requests/minute). Production deployments must verify an authenticated user session before minting Nexconn tokens.
 2. **Client-Side Moderation & Restriction State:** Smart Moderation rules, temporary `Free-Text Restricted` cooldowns, mute/block filters, flagged queues, reports, and appeals are stored in browser React memory (`SquadShieldContext`) and are **not** server-enforced or persisted to a database. Refreshing the browser resets demo state.
-3. **Single Active Local Identity:** The UI authenticates as `Kael` (`player_kael`) by default; multi-user testing requires connecting a separate Nexconn client to channel `squad_vanguard_echo`.
-
+3. **Test Player Identity Selector:** The Squad Chat screen includes a temporary test identity selector for the allowlisted demo players (`player_kael`, `player_nyx`, `player_vex`, and `player_ryder`). This selector is intended for hackathon testing only and is not a production authentication system.
 ---
 
 ## Environment Variables
