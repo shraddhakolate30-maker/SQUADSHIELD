@@ -1,0 +1,6 @@
+{
+  "name": "SQUADSHIELD",
+  "description": "Protect the Player. Preserve the Gameplay. Gaming squad communication safety platform with smart moderation and uninterrupted tactical callouts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
